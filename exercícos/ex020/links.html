@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Personalizados</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: rgba(248, 0, 0, 0.788);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        a::before {
+            content: "⇒";
+        }
+
+        a::after {
+            content: "⇐";
+        }
+
+        a.especial:hover {
+            background-color: rgba(255, 73, 73, 0.432);
+        }
+    </style>
+</head>
+<body>
+    <h1>Configurando links</h1>
+    <ul>
+        <li><a href="https://google.com" target="_blank" class="especial">Google</a></li>
+        <li><a href="https://youtube.com" target="_blank">Youtube</a></li>
+        <li><a href="https://instagram.com" target="_blank" class="especial">Instagram</a></li>
+    </ul>
+</body>
+</html>

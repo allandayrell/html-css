@@ -1,0 +1,27 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F53D72;
+}
+
+h1#principal {
+    background-color: #360D19;
+    color: #DB3765;
+}
+
+h1#secundario {
+    background-color: #46252f62;
+}
+
+.topico {
+    color: #B52D54;
+}
+
+
+
+.titulo {
+    color: #751D36;
+}
+
+.destaque {
+    background-color: rgba(207, 207, 103, 0.521);
+}

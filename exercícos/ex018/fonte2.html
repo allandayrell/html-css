@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'Coffee';
+            src: url('Coffee Extra.otf'), format('opentype'), url('Coffee Extra.ttf'), format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+            text-indent: 30px;
+        }
+
+        h1 {
+            font-family: 'Coffee';
+            font-size: 2em;
+            text-align: center;
+        }
+
+    </style>
+   
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit consequatur ducimus deserunt beatae ipsam, asperiores accusantium esse distinctio deleniti ab necessitatibus voluptatum tenetur quibusdam veniam. Ipsam voluptas autem aut in?</p>
+    <a href="fonte1.html" >Ir para o Página 1</a>
+    <!--
+    tipos de format:
+    - opentype (otf)
+    - truetype (ttf)
+    - embedded-opentype
+    - truetype-aat (Apple Advanced Typography)
+    - svg
+    -->
+</body>
+</html>

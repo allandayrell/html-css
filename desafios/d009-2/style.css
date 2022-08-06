@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(71, 42, 42);
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -70%);
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif monospace;
+    color: #ffff;
+    padding-top: 20px;
+    text-align: center;
+}

@@ -1,0 +1,20 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: radial-gradient(circle,rgba(165, 206, 176, 0.692) 10%, #bba17eab);
+    
+}
+
+h1 {
+    color:#1C1D21;
+    
+}
+h2 {
+    color: #F3A712;
+    
+}
+p {
+    color: #AD3EBA,;
+}
+a {
+    color: #F3A712;
+}

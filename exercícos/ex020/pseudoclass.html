@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div e pseudo classes</title>
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        main {
+            background: rgb(138,123,240);
+            background: linear-gradient(16deg, rgba(138,123,240,0.835171568627451) 5%, rgba(231,255,33,0.8435749299719888) 41%, rgba(255,137,33,0.8435749299719888) 73%);
+
+            width: 100%;
+            height: 100vh;
+        }
+
+        div.sol {
+            margin-left: 1300px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: rgb(255, 251, 0);
+            box-shadow: 0px 0px 50px rgba(255, 230, 2, 0.76);
+        }
+
+        div.caixinha {
+            background-color: rgba(0, 0, 0, 0.850);
+            width: 70px;
+            height: 20px;
+            margin-left: 50px;
+            margin-bottom: -15px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;       
+        }
+
+        div.caixa {
+            background-color: rgba(0, 0, 0, 0.850);
+            width: 90px;
+            height: 200px;
+            border-radius: 5px;
+            margin-left: 40px;
+        }
+
+        div.cima, .meio, .baixo {
+            background-color: lightgray;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin: 15px 0 0 20px;
+
+            border: 1px solid black
+        }
+
+        div:hover.cima{
+            background-color: red;
+        }
+
+        div:hover.meio {
+            background-color: yellow;
+        }
+
+        div:hover.baixo {
+            background-color: green;
+        }
+
+        div.poste {
+            width: 30px;
+            height: 230px;
+            background-color: rgba(0, 0, 0, 0.850);
+            margin-left: 70px;
+        }
+
+        div.rua {
+            background-color: black;
+            width: 100%;
+            height: 90px;
+        }
+
+        div.linha {
+            display: inline-block;
+            width: 65px;
+            height: 15px;
+            margin-top: 40px;
+            margin-left: 80px;
+            background-color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <main>
+        <div class="sol"></div>
+        <div class="caixinha"></div>
+        <div class="caixa">
+            <div class="cima"></div>
+            <div class="meio"></div>
+            <div class="baixo"></div>
+        </div>
+        <div class="poste"></div>
+        <div class="rua">
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+        </div>
+    </main>
+</body>
+</html>

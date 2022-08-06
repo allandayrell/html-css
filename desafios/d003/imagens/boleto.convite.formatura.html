@@ -1,0 +1,612 @@
+
+<!-- saved from url=(0056)https://api.moip.com.br/v2/boleto/BOL-4UHOPHEIHKEZ/print -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./boleto.convite.formatura_files/a7c6d4c013"></script><script src="./boleto.convite.formatura_files/nr-1211.min.js.download"></script><script async="" src="./boleto.convite.formatura_files/analytics.js.download"></script><script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"a7c6d4c013","applicationID":"419638322","transactionName":"cglaFkBeXQkBEx1rUF8HQBBTHnYEFAgIAnhBDw5Yf1BYC0smd2wZHkw=","queueTime":0,"applicationTime":58,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam-cell.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"a7c6d4c013",applicationID:"419638322"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1211.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+    <link rel="icon" type="image/png" href="https://s3.amazonaws.com/assets.moip.com.br/boleto/images/moip-icon.png">
+<script type="text/javascript" src="chrome-extension://mjfigbdcambkldpnmdigcfpncpeekedd/ilibes.js?host=bilometro.brksedu.com.br"></script><script type="text/javascript" src="chrome-extension://mjfigbdcambkldpnmdigcfpncpeekedd/external/sizzle.min.js"></script><meta name="bilometro_pomos" content="UA-23288050-18"><meta name="bilometro_mates" content="UA-23288050-14"></head>
+<body cz-shortcut-listen="true">
+    <div>
+        
+            
+                <div align="left">
+                    <!--<img width="75" height="40" align="right" src="<%= asset_path "logo_moip_email.png" %>">-->
+                </div>
+            
+        
+    </div>
+    <table border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr>
+            <td>
+                <div align="right">
+                    <font face="Arial, Helvetica, sans-serif">
+                        <i>
+                            <font size="1">Cortar nas linhas Pontilhadas&nbsp;&nbsp;</font>
+                        </i>
+                    </font>
+                </div>
+            </td>
+        </tr>
+        <tr valign="top">
+            <td>
+                <img src="./boleto.convite.formatura_files/tesoura.gif" style="margin-bottom: 3px;" width="640" height="5">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="640" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr>
+            <td width="320">
+
+            </td>
+            <td valign="bottom" width="320" align="right">
+                <b>
+                    <font size="3" face="Arial, Helvetica, sans-serif">Recibo do Sacado</font>
+                </b>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="640" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr>
+            <td valign="bottom" width="112">
+                <font size="3" face="Arial, Helvetica, sans-serif">
+                    <img src="./boleto.convite.formatura_files/eformei_logo_moip.png" vspace="0" align="absbottom" height="23" hspace="1" style="margin-bottom:2px" title="Itau" alt="Logotipo do Itau">
+                </font>
+            </td>
+            <td valign="bottom" width="75" align="center">
+                <font size="4" face="Arial, Helvetica, sans-serif"><b>|&nbsp;<font color="#999999">341-7</font>&nbsp;|</b></font>
+            </td>
+            <td valign="bottom" width="462" align="right" nowrap="nowrap"><font size="3" face="Arial"><span>34191.09503 01095.260194 61309.830000 4 88000000029900</span></font></td>
+        </tr>
+        </tbody>
+    </table>
+    <table bordercolorlight="#FFFFFF" width="640" border="1" cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr>
+            <td width="43%">
+                <font size="1" face="Arial, Helvetica, sans-serif">&nbsp;Nome Beneficiário<br></font>
+                <font size="2" face="Arial, Helvetica, sans-serif">
+                    <b>&nbsp;eFormei (por WIRECARD - 08.718.431/0001-08)</b>
+                </font>
+                <font size="1" face="Arial, Helvetica, sans-serif">&nbsp;</font>
+            </td>
+            <td width="21%">
+                <div align="center">
+                    <font size="1" face="Arial, Helvetica, sans-serif">&nbsp;Agência/Cod. Cedente<br></font>
+                    <font size="2" face="Arial, Helvetica, sans-serif">0196/13098</font>
+                    <font size="1" face="Arial, Helvetica, sans-serif"></font>
+                </div>
+            </td>
+            <td width="18%">
+                <div align="center">
+                    <font size="1" face="Arial, Helvetica, sans-serif">Data do Documento<br></font>
+                    <font size="2" face="Arial, Helvetica, sans-serif">08/11/2021</font>
+                </div>
+            </td>
+            <td width="18%">
+                <font size="1" face="Arial, Helvetica, sans-serif">&nbsp;Vencimento</font>
+                <font size="3" face="Arial">
+                    <b>
+                        <div align="center">
+                            <font size="2" face="Arial, Helvetica, sans-serif">10/11/2021</font>
+                        </div>
+                    </b>
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td width="43%">
+                <font size="1" face="Arial">&nbsp;Sacado </font>
+                <font size="1" face="Arial, Helvetica, sans-serif"><br></font>
+                <font size="2" face="Arial, Helvetica, sans-serif">
+                    <b>&nbsp;</b>
+                </font>
+                <font size="2" face="Arial">
+                    <b>Allan Dayrell Marcelino</b>
+                </font>
+                <font size="1" face="Arial, Helvetica, sans-serif">&nbsp;</font>
+            </td>
+            <td width="21%">
+                <div align="center">
+                    <font size="1" face="Arial">Número Documento</font>
+                    <font size="1" face="Arial, Helvetica, sans-serif"><br></font>
+                    <font size="2" face="Arial">500109526</font>
+                    <font size="1" face="Arial, Helvetica, sans-serif"></font>
+                </div>
+            </td>
+            <td width="18%">
+                <div align="center">
+                    <font size="1" face="Arial">Carteira/Nosso Número</font>
+                    <font size="1" face="Arial, Helvetica, sans-serif"><br></font>
+                    <font size="2" face="Arial">109/500109526</font>
+                </div>
+            </td>
+            <td width="18%">
+                <font size="1" face="Arial, Helvetica, sans-serif">&nbsp;Valor do Documento<br></font>
+                <font size="3" face="Arial">
+                    <b>
+                        <div align="right">
+                            <font size="2" face="Arial, Helvetica, sans-serif">
+                                <b><span>299,00</span></b>
+                            </font>
+                            <font size="3" face="Arial">
+                                <b>
+                                    <font size="2" face="Arial, Helvetica, sans-serif">&nbsp;</font>
+                                </b>
+                            </font>
+                        </div>
+                    </b>
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td width="4"></td>
+                        <td width="626">
+                            <font style="font-size: 10px;" face="Arial">Demonstrativo
+                                <br>
+                                <b>
+                                    eFormei processa seus pagamentos utilizando tecnologia e segurança WIRECARD BRASIL <br>
+                                    <br>
+                                    NÃO PAGUE ESSE BOLETO COM CHEQUE OU DEPÓSITO. <br>
+                                    Isso poderá fazer com que o pagamento não seja reconhecido. <br>
+                                    <br>
+                                    Se não for possível pagar este boleto imediatamente, tente novamente após algumas horas. <br>
+                                    <br>
+                                    ===============================================================<br>
+                                    <span>Fatura: 1026569. Turma: 2568. Adm: 1111. Mora: R$ 3,00. Juros: 0.03%<br></span>
+                                    <br>
+                                    ===============================================================<br>
+                                    <br>
+                                </b>
+                            </font>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="640" border="0" cellpadding="2" cellspacing="0">
+        <tbody>
+        <tr>
+            <td width="100%" align="right">
+                <b>
+                    <font size="1" face="Arial">Autenticação mecânica</font>
+                </b>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" align="middle" height="17">&nbsp; </td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="640" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr valign="top">
+            <td>
+                <img src="./boleto.convite.formatura_files/tesoura.gif" style="margin-bottom: 3px;" width="640" height="5">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="640" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr>
+            <td valign="bottom" width="112">
+                <font size="3" face="Arial, Helvetica, sans-serif">
+                    <img src="./boleto.convite.formatura_files/itau-150x60.png" vspace="0" align="absbottom" height="23" hspace="1" style="margin-bottom:2px" title="Itau" alt="Logotipo do Itau">
+                </font>
+            </td>
+            <td valign="bottom" width="75" align="center">
+                <font size="4" face="Arial, Helvetica, sans-serif"><b>|&nbsp;<font color="#999999">341-7</font>&nbsp;|</b></font>
+            </td>
+            <td valign="bottom" width="462" align="right" nowrap="nowrap"><font size="3" face="Arial"><span>34191.09503 01095.260194 61309.830000 4 88000000029900</span></font></td>
+        </tr>
+        </tbody>
+    </table>
+    <table bordercolorlight="#FFFFFF" width="640" border="1" cellpadding="1" cellspacing="0">
+        <tbody>
+        <tr>
+            <td colspan="6">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td valign="top" width="120"><font size="1" face="Arial, Helvetica, sans-serif">&nbsp;Local
+                            de Pagamento</font><font face="Arial, Helvetica, sans-serif"><br>
+                            <font size="3">&nbsp;&nbsp;&nbsp; </font><br>
+                        </font>
+                        </td>
+                        <td valign="middle" width="370">
+                            <font size="2" face="Arial, Helvetica, sans-serif">
+                            <b>&nbsp;Pagável em qualquer banco até o vencimento</b>
+                            
+                            </font>
+                            <font face="Arial, Helvetica, sans-serif"><br></font>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="140">
+                <table bordercolorlight="#FFFFFF" width="100%" border="0" cellpadding="0" cellspacing="0" height="100%">
+                    <tbody>
+                    <tr bgcolor="#cccccc">
+                        <td><font size="1" face="Arial, Helvetica, sans-serif">&nbsp;Vencimento
+                        </font><font face="Arial, Helvetica, sans-serif"><br>
+                        </font>
+                        </td>
+                    </tr>
+                    <tr bgcolor="#cccccc">
+                        <td align="right"><font face="Arial, Helvetica, sans-serif"><b><font size="3"><span>10/11/2021</span></font></b></font><font size="3" face="Arial"><b><font size="2" face="Arial, Helvetica, sans-serif">&nbsp;</font></b></font><font face="Arial, Helvetica, sans-serif"><br>
+                        </font>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" valign="top">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td valign="top"><font size="1" face="Arial">&nbsp;Nome Beneficiário</font><br> </td>
+                    </tr>
+                    <tr>
+                        <td valign="top"><font size="2" face="Arial"><b>&nbsp;eFormei (por WIRECARD - 08.718.431/0001-08)</b></font><br> </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td valign="top" width="140">
+                <table width="100%" border="0" cellpadding="1" cellspacing="1">
+                    <tbody>
+                    <tr>
+                        <td><font size="1" face="Arial, Helvetica, sans-serif">&nbsp;Agência/Código
+                            Cedente</font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><font size="2" face="Arial, Helvetica, sans-serif"><b>0196/13098</b></font></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td width="103">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div align="center"><font size="1" face="Arial">Data do documento</font><br>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="middle">
+                            <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">08/11/2021</font><br>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td colspan="2">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div align="center"><font size="1" face="Arial">No. do documento</font><br>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="middle">
+                            <div align="center"><font size="2" face="Arial, Helvetica, sans-serif">500109526</font><br>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="65">
+                <table width="98%" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div align="center"><font size="1" face="Arial">Espécie doc</font><br>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="middle">
+                            <div align="center"><font size="1" face="Arial"><font size="2">DM</font></font><br>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="44">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div align="center"><font size="1" face="Arial">&nbsp;Aceite</font><br>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="middle">
+                            <div align="center"><font size="2" face="Arial">N</font><br>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="126">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" height="100%">
+                    <tbody>
+                    <tr>
+                        <td nowrap="nowrap">
+                            <div align="center"><font size="1" face="Arial">Data Processamento</font></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="middle" nowrap="nowrap">
+                            <div align="center"><font size="2" face="Arial">08/11/2021</font></div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="140">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td><font size="1" face="Arial, Helvetica, sans-serif">&nbsp;Nosso Número
+                        </font><font face="Arial, Helvetica, sans-serif"><br>
+                        </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><font size="2" face="Arial, Helvetica, sans-serif"><b>500109526</b></font><font size="3" face="Arial"><b><font size="2" face="Arial, Helvetica, sans-serif">&nbsp;</font></b></font><font face="Arial, Helvetica, sans-serif"><br>
+                        </font>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr align="center">
+            <td valign="top" width="103">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr valign="top">
+                        <td>
+                            <div align="center"><font size="1" face="Arial">Uso do Banco</font><br>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td>
+                            <div align="center"><font size="2" face="Arial"> </font><br>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td valign="top" width="39" align="center">
+                <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr valign="top">
+                        <td align="center"> <font size="1" face="Arial">Carteira</font></td>
+                    </tr>
+                    <tr valign="top">
+                        <td align="center"><font size="2" face="Arial">109</font></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td valign="top" width="93">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr valign="top">
+                        <td>
+                            <div align="center"><font size="1" face="Arial"> Moeda</font><br>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td>
+                            <div align="center"><font size="2" face="Arial">R$</font><br>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td colspan="2" valign="top">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr valign="top">
+                        <td>
+                            <div align="center"><font size="1" face="Arial">Quantidade</font><br>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td>
+                            <div align="center"><br>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td valign="top" width="126">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr valign="top">
+                        <td>
+                            <div align="center"><font size="1" face="Arial"> Valor</font><br>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td>
+                            <div align="center"><font size="2" face="Arial"> </font><br>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td valign="top" width="140">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" height="100%">
+                    <tbody>
+                    <tr>
+                        <td bgcolor="lightgrey" height="50%"><font size="1" face="Arial, Helvetica, sans-serif">&nbsp;(=)
+                            Valor do Documento </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" bgcolor="lightgrey" height="50%"><font face="Arial, Helvetica, sans-serif"><b><font size="2"><span>299,00</span></font></b></font><font size="3" face="Arial"><b><font size="2" face="Arial, Helvetica, sans-serif">&nbsp;</font></b></font></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" rowspan="5" valign="top">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr valign="center">
+                        <td colspan="2" height="23"><font size="2" face="Arial"><b>&nbsp;Instruções
+                        </b><br>
+                        </font>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="4">
+                        </td>
+                        <td width="457"><font style="font-size: 10px;" face="Arial">Sr. Caixa, não receber após o vencimento<br>
+                            <br>
+                        </font>
+                            <font style="font-size: 11px;" face="Courier New">
+                                ===============================================================<br>
+                                <span>DM Universitária / Colégio Magnum 2020 - 48629073691. Colégio Magnum - Unidade Cidade Nova</span><br>
+                                <span>Tax. Adm.: R$4,00. Convite Extra - 1</span><br>
+                                <span>Vencimento original: 10/11/2021 / Valor original: R$295,00</span><br>
+                                ===============================================================<br>
+                            </font>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td valign="top" width="140"><font style="font-size: 10px;" face="Arial">&nbsp;(-) Descontos/Abatimento
+                <br><br>
+            </font>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="140"><font style="font-size: 10px;" face="Arial">&nbsp;(-) Outras
+                Deduções <br><br>
+            </font>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="140"><font style="font-size: 10px;" face="Arial">&nbsp;(+) Mora/Multa
+                <br><br>
+            </font>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="140"><font style="font-size: 10px;" face="Arial">&nbsp;(+) Outros
+                Acréscimos <br><br>
+            </font>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" width="140" bgcolor="#cccccc"><font style="font-size: 10px;" face="Arial">&nbsp;(=)
+                Valor Cobrado <br><br>
+            </font>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td valign="top" width="100"><font size="1" face="Arial, Helvetica, sans-serif">&nbsp;Sacado &nbsp;
+                        </font><font face="Arial, Helvetica, sans-serif"><br>
+                        </font>
+                        </td>
+                        <td valign="top" width="100%" height="40">
+                            <font size="1" face="Arial, Helvetica, sans-serif">
+                                &nbsp;Allan Dayrell Marcelino<br>
+                                &nbsp;Rua Itajubá, 1199 Apto 102 - Sagrada Família <br>
+                                &nbsp;31030430 - Belo Horizonte, MG
+                            </font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" width="100">
+                            <font size="1" face="Arial, Helvetica, sans-serif">Sacador/Avalista</font>
+                        </td>
+                        <td valign="top" width="100%">
+                            <font size="1" face="Arial, Helvetica, sans-serif">
+                                &nbsp;eFormei Software para Formaturas (Eformei) - 108.465.667-10<br>
+                            </font>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td colspan="2" valign="bottom" align="middle"><b><font size="3" face="Arial">&nbsp;Ficha
+                de Compensação </font></b>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table width="637" border="0" cellpadding="0" cellspacing="0" height="86">
+        <tbody>
+        <tr>
+            <td width="452" align="left" height="68">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td valign="bottom" width="4%" height="36" nowrap="nowrap">&nbsp;</td>
+                        <td valign="bottom" width="96%" height="53"><img alt="Embedded Image" src="data:image/png;base64,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" width="100%"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <font size="2" face="Arial">&nbsp;</font>
+                <font size="1" face="Arial, Helvetica, sans-serif"></font>
+            </td>
+            <td valign="top" width="223" align="center" height="68">
+                <font size="1" face="Arial">
+                    <center>Autenticação Mecânica</center>
+                </font>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+</body><evlist></evlist></html>
