@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio astronauta no espaço</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        section#container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: black url('imagens/espaco.jpg') no-repeat fixed;
+            background-size: 100% 100%;
+        }
+
+        section#conteúdo {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: url('imagens/astronauta.png') no-repeat fixed;
+            background-size: 100% 100%;
+
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%)
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <section id="conteúdo">
+
+        </section>
+    </section>
+</body>
+</html>
