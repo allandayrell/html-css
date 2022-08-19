@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            height: 300px;
+            border-collapse: collapse;
+            border: 4px solid rgb(143, 3, 3);
+     
+            text-align: center;
+        }
+
+        td {
+            padding: 8px;
+            border: 1px solid black;
+            vertical-align: top;
+        }
+
+        .cinza {
+            background-color: lightgray;
+        }
+
+        .data {
+            background-color: yellow;
+        }
+
+        .numero {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+            <td>D1</td>
+        </tr>
+        <tr class="cinza">
+            <td>A2</td>
+            <td class="data">B2</td>
+            <td>C2</td>
+            <td>D2</td>
+        </tr>
+        <tr>
+            <td class="numero">300</td>
+            <td>B3</td>
+            <td>C3</td>
+            <td>D3</td>
+        </tr>
+        <tr class="cinza">
+            <td>A4</td>
+            <td >B4</td>
+            <td>C4</td>
+            <td class="numero">700</td>
+        </tr>
+        <tr>
+            <td>A5</td>
+            <td>B5</td>
+            <td class="data">C5</td>
+            <td>D5</td>
+        </tr>
+    </table>
+</body>
+</html>
